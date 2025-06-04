@@ -1,5 +1,7 @@
 # odin-recipes
 
+click this link to visit:https://syedmubarish.github.io/odin-recipes/
+
 ## current project
 
 Building a basic recipe website
