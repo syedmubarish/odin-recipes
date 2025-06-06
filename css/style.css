@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
@@ -16,13 +16,16 @@ body{
 #heading{
     text-align: center;
     text-decoration: underline;
+    font-style: oblique;
     color: rgba(200, 110, 110, 0.554);
     background-color: aliceblue;
     margin: 0 auto;
     padding: 18px;
-    font-size: 35px;
+    font-size: 2.4rem;
     font-weight: bolder;
     user-select: none;
+    width: 100vw;
+    text-shadow: 2px 2px 15px rgba(200, 110, 110, 0.554);
 }
 
 .link-container{
@@ -47,8 +50,79 @@ body{
 .link-container a:hover{
     transform: scale(1.1);
     color: #901818;
+    text-shadow: 2px 2px 10px ;
 }
 
-.link-container a:visited{
-    color: #000;
+
+
+
+
+/* Style for general things found in each recipe page */
+
+#home-link{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #193c7e8a;
+    margin: 10px auto;
+    width: 100vw;
+    text-align: center;
+    font-size: 0.8rem;
 }
+
+#heading.recipe-heading{
+    font-size: 1.8rem;
+}
+
+.figure-container{
+    margin: 15px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.figure-container img{
+    width: 50vw;
+}
+
+.sub-headings{
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: italic;
+    margin: 10px 20px;
+    padding: 10px;
+    color: rgba(155, 13, 13, 0.648);
+    text-shadow: 1px 1px 15px ;
+}
+
+.description-para{
+    text-indent: 1.5rem;
+    margin: 12px;
+    padding: 10px;
+    color: #726255;
+    font-size: 1.1rem;
+}
+
+.ingredients-bullets, .directions-steps{
+    list-style-position: inside;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.1rem;
+}
+
+.ingredients-bullets li, .directions-steps li{
+    color: #726255;
+    padding: 5px;
+    margin: 2px;
+}
+
+.ingredients-bullets li::marker, .directions-steps li::marker{
+    color: #edad788b;
+}
+
+
+.ingredients-subheading{
+    color: #ae7676;
+}
+
+
+
